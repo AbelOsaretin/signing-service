@@ -18,7 +18,7 @@ const VERIFIER_PRIVATE_KEY = process.env.VERIFIER_PRIVATE_KEY;
 if (!VERIFIER_PRIVATE_KEY) {
     console.error("FATAL: VERIFIER_PRIVATE_KEY environment variable is not set.");
     // Exiting prevents the service from running without the key
-    process.exit(1);
+    process.exit(1);5000000000000000000
 }
 
 // Initialize the wallet once at startup
@@ -64,7 +64,7 @@ app.post('/api/sign-claim', async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Signing Service running on port ${PORT}`);
 });
